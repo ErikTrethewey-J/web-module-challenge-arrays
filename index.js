@@ -44,11 +44,13 @@ Use the copy function below to do the following:
     1. Receive two arguments: one for your new array and one for your original array
     2. Return the new array that holds an exact copy of the old array  
 */
-
-function copy(/*your code here*/) {
+const array = [...originalFlavors];
+function copy(array, original) {
   /*your code here*/
+  return array;
 }
-// testing, seeing if i can get connected to subbmit.
+
+console.log(copy, originalFlavors);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -60,9 +62,15 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
-function is31Flavors(/*your code here*/) {
+function is31Flavors(is31Flavors) {
   /*your code here*/
+  if (is31Flavors.length === 31) {
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log(originalFlavors);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
